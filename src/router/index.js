@@ -1,13 +1,13 @@
 import VueRouter from 'vue-router';
 // home 展示
 // admin 管理
-import homeRoutes from './home-routes';
-import adminRoutes from './admin-routes';
+import homeRoutes from '@/router/home-routes';
+import adminRoutes from '@/router/admin-routes';
 
 const routes = homeRoutes.concat(adminRoutes);
 routes.push({
   path: '/',
-  redirect: '/admin',
+  redirect: '/home',
 });
 
 Vue.use(VueRouter);

@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <transition>
+    <router-view/>
+  </transition>
 </template>
 
 <script>
@@ -9,4 +11,5 @@
 </script>
 
 <style lang="less" scoped>
+
 </style>

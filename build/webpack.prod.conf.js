@@ -122,7 +122,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     //预渲染
     new PrerenderSpaPlugin({
       staticDir: path.resolve(__dirname, '../dist'),
-      routes: ['/', '/welcome']
+      routes: ['/'].concat(['/home', '/home/hello']).concat(['/admin', '/admin/welcome'])
     }),
   ],
 })
